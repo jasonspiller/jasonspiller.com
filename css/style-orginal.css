@@ -1,0 +1,477 @@
+
+/* global */
+
+@import url('//fonts.googleapis.com/css?family=Muli:200,400,400i,700,700i,900');
+
+
+html, body
+{
+  color: #636466;
+  margin: 0;
+  padding: 0;
+  font-family: Muli, sans-serif;
+  font-size: 100%;
+}
+
+a
+{
+  position: relative;
+  color: #6ebe45;
+  text-decoration: none;
+  font-weight: 200;
+}
+
+a:before
+{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -.1em;
+  left: -.1em;
+  background-color: #6ebe45;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+a:hover
+{
+  color: #6ebe45;
+   -webkit-transition: all 0.5s ease-in-out 0s;
+}
+
+a:hover:before
+{
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1)
+}
+
+h1.soon
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%,-50%,0);
+  transform: translate3d(-50%,-50%,0);
+  margin: 0 auto; 
+}
+
+h1
+{
+  margin: .5em;
+  font-size: 3em;
+  font-weight: 200;
+  text-align: center;
+}
+
+h2
+{
+  margin: .75em 0 .25em;
+  color: #c7c8ca;
+}
+
+h3
+{
+  margin: .75em 0 .5em;
+  line-height: 1.5
+}
+
+p, li
+{
+  font-size: 1.15em;
+  line-height: 1.5;
+}
+
+
+/* nav */
+
+nav ul
+{
+  -webkit-box-sizing: border;
+  box-sizing: border;
+  min-width: 320px;
+  margin: 0;
+  padding: 0 6%;
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li
+{
+  display: inline;
+  padding: 0 .5em;
+  font-size: 1.5em;
+  line-height: 2.5em;
+  letter-spacing: .2em;
+}
+
+
+/* footer */
+footer
+{
+  clear: both;
+  margin: 4em auto 2em;
+  color: #c7c8ca;
+  font-size: .75em;
+  text-align: center;
+}
+
+footer .eyes
+{
+  color: #6ebe45;
+  font-weight: 900; 
+}
+
+footer .mouth
+{
+  color: #636466;
+}
+
+
+/* pages */
+
+.resume, .about, .portfolio
+{
+	width: 80%;
+	max-width: 52em; 
+	margin: 0 auto 2em;
+	text-align: justify;
+}
+
+.portfolio
+{
+  max-width: 80%;
+}
+
+
+/* resume */
+
+.contact-information
+{
+  margin: .5em 0 0;
+	font-size: 1.15em;
+  line-height: 1.5em;
+	text-align: center;	
+}
+
+.resume p
+{
+  margin: .25em 0 .75em;
+}
+
+.skills
+{
+	-webkit-columns: 3;
+  -moz-columns: 3;
+  columns: 3;
+  list-style-type: none;
+  margin: 0 0 0 2em;
+  padding: 0;
+  font-weight: bold;
+  text-align: left;
+}
+
+.skills li
+{
+  margin: 0 0 .35em;  
+}
+
+.experience, .education, .portfolio ul
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.experience h3
+{
+  margin: .25em 0 .5em;  
+}
+
+.experience ul
+{
+  list-style-type: none;
+  margin: 0 0 1.5em;  
+}
+
+.experience ul li
+{
+  margin: .5em 0;
+}
+
+.experience li li
+{
+  font-size: 1em;
+}
+
+.experience ul li::before
+{
+  content: "\2022"; 
+  position: relative;
+  top: 0em; 
+  float: left;
+  margin: 0 0 0 -1em;
+ `padding: 0 0 0 1.125em; 
+  width: 1em;
+  font-size: 1em; 
+  color: #c7c8ca;  
+}
+
+.dates
+{
+  color: #c7c8ca;
+  font-weight: normal;
+}
+
+.company
+{
+  font-weight: normal;
+}
+
+.degree, .gpa
+{
+  font-weight: bold;
+}
+
+
+/* portfolio */
+
+.piece img
+{
+  width: 30%;
+  max-width: 320px;
+  display: block;
+  float: right;
+  margin: 0 0 1em 2em;
+}
+
+.portfolio p
+{
+  width: 60%;
+  max-width: 52em;
+}
+
+
+/* gallery */
+@keyframes rotation 
+{
+  from {transform: rotate(0deg);}
+  to {transform: rotate(359deg);}
+}
+
+#spinner
+{
+  height: 5em;
+  width: 5em;
+  margin: 10em auto;
+  position: relative;
+  animation: rotation .5s infinite linear;
+  border-left: .1em solid rgba(110,190,69,.15);
+  border-right: .1em solid rgba(110,190,69,.15);
+  border-bottom: .1em solid rgba(110,190,69,.15);
+  border-top: .1em solid rgba(110,190,69,.8);
+  border-radius: 100%;
+}
+
+#gallery
+{
+  column-count: 5;
+  column-gap: 0;
+  opacity: 0;
+}
+
+#gallery .gallery-img
+{
+  width: 100%;
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+}
+
+#gallery .gallery-img img
+{
+  width: 100%;
+  display: block;
+}
+
+#gallery .gallery-img figcaption
+{
+  background: rgba(0,0,0,0.75);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#gallery .gallery-img.left figcaption
+{
+  top: 0;
+  left: -100%;
+}
+
+#gallery .gallery-img.right figcaption
+{
+  top: 0;
+  right: -100%;
+}
+
+#gallery .gallery-img.top figcaption
+{
+  top: -100%;
+}
+
+#gallery .gallery-img.bottom figcaption
+{
+  bottom: -100%;
+}
+
+#gallery .gallery-img.animated figcaption
+{
+  transition: .5s ease-out;
+}
+
+#gallery .gallery-img.left.animated figcaption
+{
+  left: 0;
+}
+
+#gallery .gallery-img.right.animated figcaption
+{
+  right: 0;
+}
+
+#gallery .gallery-img.top.animated figcaption
+{
+  top: 0;
+}
+
+#gallery .gallery-img.bottom.animated figcaption
+{
+  bottom: 0;
+}
+
+#gallery .gallery-img figcaption .description
+{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#gallery .gallery-img figcaption .description h1
+{
+  box-sizing: border;
+  position: absolute;
+  top: 1em;
+  width: 100%;
+  margin: 0;
+  padding:  0;
+  color: #fff;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+#gallery .gallery-img figcaption .description p
+{
+  position: absolute;
+  bottom: 1.5em;
+  width: 100%;
+  color: #fff;
+  font-weight: 900;
+  text-align: center;
+}
+
+@media (min-width: 1140px) and (max-width: 1440px) { 
+  #gallery {
+    column-count: 4;
+  }  
+}
+
+@media (min-width: 768px) and (max-width: 1140px) { 
+  #gallery {
+    column-count: 3;
+  }  
+}
+
+@media (min-width: 480px) and (max-width: 768px) { 
+  #gallery {
+    column-count: 2;
+  }  
+}
+
+@media (max-width: 480px) { 
+
+  #gallery {
+    column-count: 1;
+  }
+
+}
+
+
+/* svg logo */
+
+#logo, #logomark
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.gray
+{
+  fill: #636466;
+}
+
+.light-gray
+{
+  fill: #c7c8ca;
+}
+
+.green
+{
+  fill: #6ebe45;
+}
+
+.home-page
+{
+  position: absolute;
+  margin: 0 auto;
+  left: 50%;
+  width: 50%;
+  -webkit-transform: translate3d(-50%,-50%,0);
+  transform: translate3d(-50%,-50%,0);
+}
+
+h1.home-page
+{
+  top: 50%;
+  height: 0;
+  padding-top: 17%;    
+}
+
+footer.home-page
+{
+  bottom: 2em;
+}
+
+.logomark-container
+{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6%;
+  max-width: 4em;
+}
+
+.logo-resume
+{
+	position: relative;
+	width: 10em;
+  height: 2.5em;
+	margin: 1em auto 0;
+  text-align: center;
+}

@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+.container-fluid {
+  background: #ccc;
+  height: 5rem;
+}
+
+.row {
+  background: #c00;
+  height: 4.7rem;
+}
+
+[class*="col-"] {
+  background: #999;
+  height: 4.2rem;
+  border: 2px solid rgba(0,0,0,0.3);
+}

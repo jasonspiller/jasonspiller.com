@@ -1,0 +1,126 @@
+<!doctype html>
+
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>Step by Step Sass Notes</title>
+    
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    
+    <style>
+      
+      body {
+        padding: 1em;
+      }
+      
+    </style>
+
+  </head>
+  
+  
+  <body>
+    
+    
+    <h1>Step by Step Sass</h1>
+    
+  <h2>Lesson 1: Intro</h2>
+    <ul>
+      <li>Syntactically awesome style sheets</li>
+      <li>Pre-processor for CSS</li>
+      <li>2 formats, .sass (older, original), scss (more similar to css)</li>
+      <li>Variables, Mixins and Extensions, Nesting, Import</li>
+      <li>Others including Less and Stylus</li>
+    </ul>
+    
+    <h2>Lesson 2: Intalling Sass</h2>
+    <ul>
+        <li>Sass is part of Ruby</li>
+        <li>You need to install Ruby on systems where you compile Sass</li>
+        <li>Installed and ran via the command line (www.rubyinstaller.org)</li>
+    </ul>
+    
+    <h2>Lesson 3: Class Project</h2>
+    <ul>
+        <li>Sass can be sprinkled in, but writing it from the start is where the power is.</li>
+    </ul>
+
+    <h2>Lesson 4: Compiling Sass</h2>
+    <ul>
+        <li>Run Sass from the cmd line</li>
+        <li>It watches a .scss file and automatically creates a .css file</li>
+        <li>Go to directory in cmd line &gt; sass --watch style.scss:style.css</li>
+    </ul>
+    
+    <h2>Lesson 5: Variables</h2>
+    <ul>
+      <li>Variables are declared with $</li>
+      <li>Variables can be hex value, string, int or boolean</li>
+      <li>Declare variables at the top (scope)</li>
+      <li>Use anywhere in the code where you want to replace</li>
+      <li>Compiling will look for other css issues and possibly throw errors</li>
+    </ul>
+
+    <h2>Lesson 6: Comments</h2>
+    <ul>
+      <li>Sass can use // to do single line comments that do not get outputted</li>
+      <li>Multiline still get outputted</li>
+    </ul>
+
+    <h2>Lesson 7: Nesting</h2>
+    <ul>
+      <li>Allows to nest selectors within other selectors (sub-properties (-family, -size, etc. can also be nested)</li>
+      <li>Don't nest at the BODY level</li>
+      <li>Try not to nest more than 3 levels</li>
+      <li>Benefits include less typing, organzies code, easier to maintain</li>
+    </ul>
+    
+    <h2>Lesson 8: Extend</h2>
+    <ul>
+      <li>Essentially super variables</li>
+      <li>Allows you to re-use multiple lines of code</li>
+      <li>Define sets of properties that groups of elements could share</li>
+      <li>You can create a placeholder, it is base class that can have all the properties you need (e.g. %transition)</li>
+      <li>Then add @extend transition to your selector</li>
+    </ul>
+    
+    <h2>Lesson 9: Mixins</h2>
+    <ul>
+      <li>Mixins should only be used for changing values</li>
+      <li>Use @extend to replicate multiple selectors</li>
+      <li>Mixins allow you to declare parameters/arguments</li>
+      <li>You can provide default values by adding :value after the parameter</li>
+    </ul>
+    
+    <h2>Lesson 10: Parent Selector</h2>
+    <ul>
+      <li>Parent selector is represented by the &amp;</li>
+      <li>You must nest your classes or IDs for it to work</li>
+      <li>Allows for psudeo classes to nested</li>
+    </ul>
+    
+    <h2>Lesson 11: Import</h2>
+    <ul>
+      <li>Allows you break up your code into &quot;partials&quot; and then combines them back into one file, saves on server calls</li>
+      <li>A partial file starts with an underscore</li>
+      <li>Don't use an underscore when calliing</li>
+      <li>Import will look for .scss, or .css</li>
+      <li>You can also minimize your css using --style compress after your watch cmd (e.g. sass --watch style.scss:style.css --style compressed)</li>
+    </ul>
+
+    <h2>Lesson 12: Next Steps</h2>
+    <ul>
+      <li>You can also use functions and math</li>
+      <li>Things such as lighten or darken for colors</li>
+      <li>You can use the math functions to help with responsive websites</li>
+      <li>CMD is old fashioned, newer tools can help with the compiling</li>
+      <li>Compass is open-source CSS authoring toolkit, recommended (www.compass-style.org)</li>
+    </ul>
+
+    
+  </body>
+
+
+</html>

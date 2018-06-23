@@ -1,0 +1,71 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Building Your First Website with Bootstrap 4</title>
+            
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    
+    <style>
+      
+      body {
+        padding: 1em;
+      }
+      
+    </style>
+
+  </head>
+  
+  
+  <body>
+    
+    
+  <h1>Building Your First Website with Bootstrap 4</h1>
+    
+  <h2>Lesson 1: </h2>
+  <ul>
+    <li>Container-Fluid now has padding that has to be removed. Add .no-padding{padding-left:0; padding-right:0}. You must do something similar to remove margin from .row</li>
+    <li>Bootstrap has 3 color schemes built in (Light, Dark and Blue)</li>
+    <li>.bg-inverse for Dark version</li>
+    <li>Bootstrap has many components that can be copied into the project</li>
+    <li>Nav is common one</li>
+    <li>Font-Awesome no substitutes icons with SVG via JS</li>
+    <li>You can float the nav to the right with .mlauto</li>
+    <li>You can align a dropdown to the right of the parent element by adding .dropdown-menu-right to .dropdown-menu</li>
+    <li>jumbotron is a pre-built hero component</li>
+    <li>My observation - no need to have smaller col- size if not needed. Instructor kept putting col-sm-12. Only need modification for large screens (mobile first)</li>
+    <li>Carousel component is not responsive (stretches photo)</li>
+    <li>I added background to navigation arrows and slide captions (.carousel-caption {background: rgba(0,0,0,0.75);}) for better contrast</li>
+    <li>.d-none .d-md-block can hids and show things at the respective size</li>
+    <li>Breakpoints for Bootstrap 4
+      <ul>
+        <l1>@media (min-width: 576px) { ... }</li>
+        <li>@media (min-width: 768px) { ... }</li>
+        <li>@media (min-width: 992px) { ... }</li>
+        <li>@media (min-width: 1200px) { ... }</l1>
+      </ul>
+    </li>
+    <li>Insert .sr-only usually in span to have screen reader read the text</li>
+    <li>Insert aria-hidden="true" to elements to hide them from screen readers</li>
+    <li>.img-fluid to add responsiveness to images</li>
+    <li>Power lies in nesting rows</li>
+    <li>Add modal at the bottom of all your mark-up</li>
+    <li>You can call a modal by a class or ID</li>
+    <li>There are sm, md and lg modals</li>
+    <li>You can add responsive classes to embedded items (i.e. containing div .embed-responsive .embed-responsive-16by9 and embedded item .embed-responsive-item)</li>
+    <li>For inline items you can put a wrapper around them and use margin: auto to vertically center them</li>
+    
+    
+  </ul>
+
+  
+  </body>
+
+
+</html>

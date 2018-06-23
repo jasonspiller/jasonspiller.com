@@ -1,0 +1,59 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Build Your First WordPress Theme</title>
+            
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    
+    <style>
+      
+      body {
+        padding: 1em;
+      }
+      
+    </style>
+
+  </head>
+  
+  
+  <body>
+    
+    
+  <h1>Build Your First WordPress Theme</h1>
+    
+  <h2>Lesson 1</h2>
+    <ul>
+      <li>Always include Theme comment, this is how WP recognizes it.<br>
+        /*<br>
+        Theme Name: Slicky v01<br>
+        Theme URI: N/A<br>
+        Author: Jason Spiller<br>
+        Author URI: http://www.jasonspiller.com<br>
+        Description: My first shot at this.<br>
+        Version: 1.0<br>
+        */        <br>
+      </li>
+      <li>index.php is how you add structure</li>
+      <li>Can be super simple</li>
+      <li>You can build child themes from existing themes</li>
+      <li>You have to tell WP to use styles from the parent theme<br>
+        add_action('wp_enqueue_scripts', function() {<br>
+wp_enqueue_style('css-of-parent-theme', get_template_directory_uri() . '/style.css');<br>
+});</li>
+      <li>Now you can override any necessary styles</li>
+      <li>You can build new pages for different categories use slug and prebuilt components like header and footer</li>
+      <li>You can add widgets too</li>
+      <li>Widgets can take values passed to them in the settings</li>
+      <li>Theme can also have settings passed to them</li>
+    </ul>
+  </body>
+
+
+</html>

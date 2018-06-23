@@ -1,0 +1,88 @@
+/*
+ Theme Name:   JasonSpiller.com Blog
+ Theme URI:    N/A
+ Description:  Twenty Seventeen Child Theme for https://jasonspiller.com/blog
+ Author:       Jason Spiller
+ Author URI:   https://jasonspiller.com
+ Template:     twentyseventeen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+*/
+
+.site-title a, .colors-custom .site-title a, body.has-header-image .site-title a, body.has-header-image.colors-custom .site-title a, .site-description, .colors-custom .site-description, body.has-header-image .site-description, body.has-header-image.colors-custom .site-description {
+    color: #fff !important;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+
+.site-description, .colors-custom .site-description, body.has-header-image .site-description, body.has-header-image.colors-custom .site-description {
+    font-weight: 900 !important;
+}
+
+.has-header-image.twentyseventeen-front-page .custom-header, .has-header-video.twentyseventeen-front-page .custom-header, .has-header-image.home.blog .custom-header, .has-header-video.home.blog .custom-header {
+  height: 50vh;
+}
+
+.has-header-image .custom-header-media img, .has-header-video .custom-header-media video, .has-header-video .custom-header-media iframe, .has-header-image:not(.twentyseventeen-front-page):not(.home) .custom-header-media img {
+  width: auto !important;
+}
+
+/*Computer screen */
+@media screen and (min-width: 48em) {
+	.twentyseventeen-front-page.has-header-image .custom-header-image {
+	/*height: 1200px;*/
+	/*height: 100vh;*/
+	height: 50vh;
+	/*max-height: 100%;*/
+	/*overflow: hidden;*/
+	}
+}
+
+/* Mobile screen*/
+.has-header-image.twentyseventeen-front-page .custom-header {
+	/*display: table;*/
+	/*height: 300px;*/
+	/*height: 75vh;*/
+	height: 50vh;
+	/*width: 100%;*/
+}
+
+/* Computer screen with logged in user and admin bar showing on front end*/
+@media screen and (min-width: 48em) {
+	.admin-bar.twentyseventeen-front-page.has-header-image .custom-header-image {
+	/*height: calc(100vh - 32px);*/
+	height: calc(50vh - 32px);
+	}
+}
+
+.navigation-top a {
+  color: #6ebe45 !important;
+  font-weight: 200;
+  letter-spacing: .2em;
+}
+
+.navigation-top a:hover {
+  color: #636466 !important;
+  font-weight: 400;
+  letter-spacing: .2em;
+}
+
+footer {
+  color: #c7c8ca;
+  font-size: .75em;
+  text-align: center;
+}
+
+.site-footer {
+  border-top: 0;
+}
+
+footer .eyes {
+  color: #6ebe45;
+  font-weight: 900;
+}
+
+footer .mouth {
+  color: #636466;
+}

@@ -1,0 +1,152 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Build a Responsive Web Site from Scratch</title>
+            
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    
+    <style>
+      
+      body {
+        padding: 1em;
+      }
+      
+    </style>
+
+  </head>
+  
+  
+  <body>
+    
+    
+  <h1>Build a Responsive Web Site from Scratch</h1>
+    
+  <h2>Lesson 1: Introduction</h2>
+  <ul>
+    <li>Overview of the course and tools.</li>
+    <li>Using Sass, Node, npm, Gulp Autoprefixer, BrowserSync, cmndr (command line), BEM naming conv</li>
+  </ul>
+
+  <h2>Lesson 2: Planning and Slicing</h2>
+  <ul>
+    <li>Main structure classes of the page are prepended with .page-</li>
+    <li>You slice or manually created optimized files</li>
+    <li>Multiple sizes important</li>
+  </ul>
+
+   <h2>Lesson 3: Setting Up a Front-End Workflow</h2>
+  <ul>
+    <li>Sites are so complex the pre-processors, build tools, package managers, etc. are needed</li>
+    <li>Preprocessors (CSS = Sass / Less, HTML = Haml / Jade, JS = CoffeeScript / Script)</li>
+    <li>Task Runners (Grunt / Gulp)</li>
+    <li>Bundlers (Webpack / Browserify)</li>
+    <li>Automation (CodeKit)</li>
+    <li>npm - Node.js Package Manager</li>
+    <li>src folder contains normal web files, dist folder contains output folder with a js and .json file in the root</li>
+    <li>Gulp needs to be installed globablly and locally (npm install gulp -g and npm install gulp)</li>
+    <li>.json file contains all of the information about the devDependencies (packages used)</li>
+    <li>When sharing on GitHub, no need to include all the packages, just the .json</li>
+    <li>--save-dev flag adds dependencies to the gulp </li>
+    <li>Install plugins to help with workflow</li>
+    <li>gulp-sass can be used for Sass</li>
+    <li>Irregularities can happen with line errors, SourceMaps (gulp-sourcemaps) fixes this</li>
+    <li>Autoprefixer adds vendor prefixes automatically, needed for working with FlexBox</li>
+    <li>Imagemin further reduces/compresses .pngs, .jpgs and .svgs</li>
+    <li>BrowserSync reloads your browser on save (bug fix - install using &quot;npm i browser-sync --save&quot;</li>
+    <li>gulp can run automated tasks or adhoc</li>
+    <li>a gulpfile.js is used to initiate plugins and set up tasks</li>
+    <li>Order matters in setting up your pipes (see gullp.js)</li>
+    <li>Documentation can be found on all tasks</li>
+    <li>Add css, images, browsersync, copy and watch tasks</li>
+  </ul>
+
+   <h2>Lesson 4: Working with HTML</h2>
+  <ul>
+    <li>As sites become more complex an mo for class naming is needed</li>
+    <li>BEM has low specificity and clear distinction between, blocks, elements, etc.</li>
+    <li>Need more understanding of BEM</li>
+    <li>Everything is contained in a Li</li>
+    <li>Good use of header tags</li>
+    <li>Reused &lt;header&gt; tag in blog section? I guess becuase each blog item had more the one element in the header</li>
+    <li>Contained each form item (label and field) in it's own container</li>
+    <li>Icon all contained in div</li>
+  </ul>
+
+   <h2>Lesson 5: Working with Sass</h2>
+  <ul>
+    <li>Sass partials are imported in to final stylesheet</li>
+    <li>Create separate folders for your partials (denoted with an _)</li>
+    <li>base - basic styles and reset (helper classes like clearfix, etc.)</li>
+    <li>config - for configuration (variables like breakpoints, colors, etc.)</li>
+    <li>mixins - mixins functions, breakpoints, grid classes</li>
+    <li>modules - reusable objects (grids)</li>
+    <li>pages - styles specific to a page or section (welcome, services, etc.)</li>
+    <li>struture - for main header and footer (header, footer, sections)</li>
+    <li>Extend classes is possible, but watch out for break less specific thing</li>
+    <li>Mixins can be great for things you need to type over and over</li>
+    <li>Mixins have arguments</li>
+    <li>Functions</li>
+    <li>Set breakpoints in the  _config.scss then create mixins to use throught the project</li>
+    <li>This is also where you can add a retina mixin to hande Retina Displays.</li>
+    <li>You can use minimal resets when doing small projects.</li>
+    <li>Important to make everything have border-box, set all media (img, embed, object, video) to 100%</li>
+    <li>For helpers, Clearfix is the primary one</li>
+    <li>Normally you would create more general typography for headings, paragraphs, etc., but since it is small site with BEM notation we will style everything very specifically</li>
+  </ul>
+  <h2>Lesson 6: Building a Grid System</h2>
+  <ul>
+    <li>Building a manual grid based off of Bootstrap</li>
+    <li>Using Floats and clearfixes with negative margins</li>
+    <li>The containers then have left and right padding to simulate the gutter</li>
+    <li>A little extra markup needed to use gutter</li>
+    <li>Everything based on percentages</li>
+    <li>Style at large breakpoints first then work your way down, moving styling to smaller breakpoints. This ensure mobile-first</li>
+    <li>Use calc's to determine the width of the individual grid sizes (i.e .grid-4 {width: calc(8.333333333333333% * 4);} )</li>
+    <li>You must have something in the grid div to make it show up (the extra markup mention above)</li>
+  </ul>
+  <h2>Lesson 7: Styling the Website</h2>
+  <ul>
+    <li>As you use things multiple times consider adding them to the mixins general (margin-auto, vertical centering, link underlining, etc.)</li>
+    <li>Cool pixel &gt; em/rem calculator mixins:<br>
+    @function em($pixels, $ref: 16) {
+      @return ($pixels / $ref) * 1em; }<br>
+    @function rem($pixels, $ref: 16) {
+      @return ($pixels / $ref) * 1rem; }</li>
+    <li>Wrap in grid and add breakpoint classes as needed in your HTML</li>
+    <li>Use srcset on images to set values for retina</li>
+    <li>Hamburger nav can be super easy with .toggle()</li>
+    <li>Styles should be mobile first, use include for larger breakpoints</li>
+    <li>img fix for responsive images:
+      img {
+max-width: none; width: 100%; }</li>
+    <li>Safari rounds fields, use: border-radius: 0; 
+-webkit-appearance: 0;</li>
+    <li>Use ems on things when you want it to size with text, use rem when you want it to be a consistent size</li>
+    <li>Use just decimal number with line-height (1.6, 1.25, etc.)</li>
+    <li>Use color: inherit on links that you want to be the same color as content (some titles, footer text, etc.)</li>
+  </ul>
+
+   <h2>Lesson 8: Conclusion</h2>
+  <ul>
+    <li>You could add more Gulp plugins</li>
+    <li>gulp-useref - creates one file each for html, css and js</li>
+    <li>gulp-uglify - js minifier</li>
+    <li>gulp-responsive - output images to multiple size</li>
+    <li>gulp-uncss - removew redundant css</li>
+    <li>gulp-htmlmin - html minifier</li>
+    <li>a curator list is at github.com/pestov/essential-gulp-plugins</li>
+    <li>Next steps could be adapting the design to Flexbox and or CSS Grid then doing progressive enhancement</li>
+    <li>You need to add own content including favicons, logos etc.</li>
+    <li>Make the form work (formspree.io for no programming method)</li>
+  </ul>
+  </body>
+
+
+</html>

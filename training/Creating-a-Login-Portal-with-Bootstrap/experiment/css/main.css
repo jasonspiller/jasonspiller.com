@@ -1,0 +1,108 @@
+body.signin-body
+{
+  background: #636466;
+}
+
+.signin-body a
+{
+  color: #6ebe45;
+}
+
+.container.signin-container
+{
+  margin-top: 5%;
+}
+
+.card.signin-card
+{
+  color: #636466;
+  background: #fff;
+  -moz-box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+
+.signin-card .card-body
+{
+  padding: 0 5%;
+}
+
+img.signin-logo
+{
+  padding: 0 0 1rem;
+  margin: 0 auto;
+  display: block;
+}
+
+.signin-card .card-body h2
+{
+  margin: -30px 0 30px;
+  color: #c7c8ca;
+  font-weight: 400;
+  font-size: 1.25rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .35rem;
+}
+
+@media (min-width: 768px) {
+  .signin-card .card-body h2 
+  {
+    margin: -40px 0 40px;    
+    font-weight: 300;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+  }
+}
+
+.signin-form label
+{
+  display: block;
+  text-align: center;
+  margin: .5rem auto .25rem;
+}
+
+.form-control:focus
+{
+  border-color: #6ebe45;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(110, 190, 69, 0.5);
+}
+
+.btn.signin-button
+{
+  width: 100%;
+  margin: 10px 5px;
+  background: #6ebe45;
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+}
+
+.btn:focus
+{
+  border-color: #c7c8ca;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(99, 100, 102, 0.75);
+}
+
+
+.signin-form a
+{
+  display: block;
+  text-align: center;
+  margin: .5rem auto .25rem;
+}
+
+.form-check.signin-remember .form-check-input
+{
+  margin-top: .4rem;
+}
+
+.request-account
+{
+  display: block;
+  margin-top: .5rem;
+  text-align: center;
+}
+
+
+

@@ -1,0 +1,168 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Build a Custom WordPress Theme</title>
+            
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    
+    <style>
+      
+      body {
+        padding: 1em;
+      }
+      
+    </style>
+
+  </head>
+  
+  
+  <body>
+
+
+  <h1>Build a Custom WordPress Theme</h1>
+
+  <h2>Lesson 1: Introduction to Templating</h2>
+    <ul>
+      <li>The Theme folder is under wp-content</li>
+      <li>Use an existing theme to workfrom (use most recent one)</li>
+      <li>Functions allow you to add functionailty, you can use these as well</li>
+      <li>You can build child themes from existing themes</li>
+      <li>You have to tell WP to use styles from the parent theme<br>
+        add_action('wp_enqueue_scripts', function() {<br>
+        wp_enqueue_style('css-of-parent-theme', get_template_directory_uri() . '/style.css');<br>
+        });</li>
+      <li>Now you can override any necessary styles</li>
+      <li>This allows the base theme to be updated with overwriting your changes</li>
+      <li>Hooks allow you to execute code prior or after the them has loade. Allows you to load your theme as you need.</li>
+      <li>Filters allow you filter based on content</li>
+      <li>Query Monitor - helps you troubleshoot theme issues</li>
+      <li>Template structure includes: Header, content, sidebar and footer</li>
+      <li>Theme structure includes: 404 (error page), Archive (list of post), many more</li>
+      <li>Can be super simple. All you need index.php (how you add structure) and style.css (how you add format)</li>
+      <li>More commonly you would use: index, style, header, footer and functions</li>
+    </ul>
+
+    <h2>Lesson 2: Introduction to the Template Heirarchy</h2>
+    <ul>
+      <li>Wordpress searches for certain files, if not present it moves on eventually reaching index.php. </li>
+      <li>This is a page with an interactive heirarchy - https://developer.wordpress.org/themes/basics/template-hierarchy/, it works from left to right</li>
+      <li>Keep only the minimum need and build from there</li>
+      <li>WP is blog-first, so some changes needed for more of a standard website</li>
+      <li>These are section for blogs
+        <ol>
+          <li>home.php is the home page of the &quot;blog&quot;</li>
+          <li>single.php - an individual post</li>
+          <li>archive.php - list of post</li>
+          <li>tag.php - helps with tags</li>
+          <li>category and author are common</li>
+          <li>attachment.php - deals with images</li>
+          <li>search.php (and search-form.php) - searching content</li>
+        </ol>
+      </li>
+      <li>For of a standard website      Index.php and page.php (to have a different look than index)</li>
+      <li>Date.php - an archive page based on date</li>
+      <li>Post-type everything is a post-type</li>
+      <li>You can create custom post-types, then create pages that display those post-types</li>
+      <li>You can create custom single pages for post-types as well</li>
+      <li>You can create custom templates. Add a templates folder and then add php code and comments to tie it all together.</li>
+      <li>Do not prepend custom templates with &quot;page&quot;, it will confuse WP</li>
+    </ul>
+    <h2>Lesson 3: WordPress Template Tags</h2>
+    <ul>
+      <li>functions.php is very important (should always be included)</li>
+      <li>You can functions from any page within the theme file</li>
+      <li>WP comes with helper functions</li>
+      <li>header and footer should be included on all themes (not visible, litterally in the &lt;head&gt; and right before the &lt;/body&gt;</li>
+      <li>&lt;?php wp_head(); ?&gt; - include this right before &lt;/head&gt; - css, plugins, etc.</li>
+      <li>&lt;?php wp_footer(); ?&gt; - include this right before &lt;/body&gt; - scripts and similar</li>
+      <li>You add scripts with load_scripts() function (wp_enqueue_scripts()) and an add_action in functions.php </li>
+      <li>Similarily you can load styles with wp_enqueue_style('label', 'url', array('dependencies'), 'version' )</li>
+      <li>You can add partials with &lt;?php get_template_part('loop', 'index'); ?&gt; </li>
+      <li>This can be handy for things like nav</li>
+      <li>get_theme_file_uri('add rest of path') - inserts the page to the theme, then you can add the rest of the path manually</li>
+      <li>Important to register your menu</li>
+      <li>register_nav_menu ('header-menu',__('Header Menu')); add </li>
+      <li>Inside your header you put &lt;?php wp_nav_menu(array('theme_location&quot; ==&gt; &quot;header-menu&quot; ?&gt;</li>
+      <li>You could add footer menus, or side menus, then when you add a page you can add it to specific menu</li>
+      <li>It's also the what is used to wrap menu items in html, css, etc.</li>
+      <li>The Loop is not actual loop function, it's just wat is used in WP</li>
+      <li>Echo spits out value </li>
+      <li>Template tags are the building blocks of getting data - https://codex.wordpress.org/Template_Tags</li>
+    </ul>
+
+    <h2>Lesson 4: Template Components</h2>
+    <ul>
+      <li>You can use conditionals to spit out different code</li>
+      <li>Instead of get_header(); use get_header('home'); and it will call a file called header-home.php in the theme folder</li>
+      <li>You now can use a conditional script to something like &lt;?php if(is_home()) {get_footer('home');} elseif(is_404()) {get_footer('404');}</li>
+      <li>This would be in place of using home.php/404.php</li>
+    </ul>
+
+    <h2>Lesson 5: Slicing it Up</h2>
+    <ul>
+      <li>Modify style.css in the root to reflect you information. Always include Theme comment, this is how WP recognizes it.<br>
+/*<br>
+Theme Name: Slicky v01<br>
+Theme URI: N/A<br>
+Author: Jason Spiller<br>
+Author URI: http://www.jasonspiller.com<br>
+Description: My first shot at this.<br>
+Version: 1.0<br>
+*/ <br>
+      </li>
+      <li>Create screenshot.png so it show in the theme manager</li>
+      <li>You can build new pages for different categories use slug and prebuilt components like header and footer</li>
+      <li>Start with header.php, let WP do the work with language, charset and especially title</li>
+      <li>In functions.php replace the function calls with your theme name</li>
+      <li>Enqueue your css and scripts in the functions.php and test that everything imports</li>
+      <li>No need to import jQuery, WP already does</li>
+      <li>Need to your dependencies to the array() in the enqueue (primarily jquery)</li>
+      <li>Versions are used for caching purposes, you should try to use them if you can, but won't affect a new site</li>
+      <li>Make sure you split your your parts the best way you can</li>
+      <li>Nav can be put &quot;template-parts&quot; folder</li>
+      <li>You can use php slugs everywhere</li>
+      <li>Pagination has a whole lot of options: https://codex.wordpress.org/Pagination</li>
+    </ul>
+
+    <h2>Lesson 6: Components You Can Build in Functions</h2>
+    <ul>
+      <li>In functions.php you can build sidebar, footers, etc that you will see in WP Widgets</li>
+      <li>Widgets can take values passed to them in the settings</li>
+      <li>Theme can also have settings passed to them</li>
+      <li>You can add varied footer parts</li>
+      <li>If just information that isn't going to change or use php, parts, slugs, etc, just useText or Custom HTML</li>
+      <li>You can add custom menu and register them so the show up in the Admin section</li>
+      <li>They can have custom containers, classes, etc.</li>
+      <li>You can create your own custom post types</li>
+      <li>WP recommends doing this as a plugin, but it can be done in the theme's functions.php</li>
+      <li>You should always namespace your post type to avoid conflicts</li>
+      <li>Sometimes things can get out of sync with WP. To fix change the Permalink setting and then it change back</li>
+      <li>Worst case you can do a flush_rewrite_rules(); This is very expensive and should only be used once. You could create a plugin that once activated executes this.</li>
+      <li>To generate dozens of different things for WP, including Post Types try https://generatewp.com/</li>
+    </ul>
+
+  <h2>Lesson 7: Settings and Admin Features</h2>
+    <ul>
+      <li>You can assign specific pages to be home and blog</li>
+      <li>You can file pages under pages like any site</li>
+      <li>You can modify the menu text while retaining page title</li>
+    </ul>
+
+    <h2>Lesson 8: Creating Your Own Asset Pipeline</h2>
+    <ul>
+      <li>Advanced Custom Fields - allows you to add custom content on post</li>
+      <li>Theme Handbook a handy resource from WP</li>
+    </ul>
+
+    
+  </body>
+
+
+</html>

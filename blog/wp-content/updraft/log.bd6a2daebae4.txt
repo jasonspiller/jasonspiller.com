@@ -1,0 +1,233 @@
+0000.001 (0) Opened log file at time: Mon, 18 Jun 2018 17:43:01 +0000 on https://jasonspiller.com/blog
+0000.002 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.14.7 WP: 4.9.6 PHP: 5.6.36 (litespeed, Linux us-west06.archhosting.net 3.10.0-714.10.2.lve1.4.79.el7.x86_64 #1 SMP Thu Jan 4 13:30:50 EST 2018 x86_64) MySQL: 5.5.5 WPLANG: en_US Server: LiteSpeed safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 28.9M | 29.3M) multisite: N openssl: OpenSSL 1.0.2o  27 Mar 2018 mcrypt: Y LANG:  ZipArchive::addFile: Y
+0000.038 (0) Free space on disk containing Updraft's temporary directory: 205761.8 MB
+0000.039 (0) Tasks: Backup files: 1 (schedule: weekly) Backup DB:  (schedule: weekly)
+0000.040 (0) Processed schedules. Combining jobs from identical schedules. Tasks now: Backup files: 1 Backup DB: 1
+0000.044 (0) Requesting semaphore lock (fd) (apparently via scheduler: last_scheduled_action_called_at=1528160959, seconds_ago=1182822)
+0000.045 (0) Set semaphore last lock (fd) time to 2018-06-18 17:43:01
+0000.046 (0) Semaphore lock (fd) complete
+0000.048 (0) Backup run: resumption=0, nonce=bd6a2daebae4, begun at=1529343781 (0s ago), job type=backup
+0000.050 (0) Scheduling a resumption (1) after 300 seconds (1529344081) in case this run gets aborted
+0000.058 (0) Checking if we have a zip executable available
+0000.059 (0) Testing: /usr/bin/zip
+0000.065 (0) Output: zip warning: binziptest/test.zip not found or empty
+0000.066 (0) Output: adding: binziptest/subdir1/	(in=0) (out=0) (stored 0%)
+0000.066 (0) Output: adding: binziptest/subdir1/subdir2/	(in=0) (out=0) (stored 0%)
+0000.066 (0) Output: adding: binziptest/subdir1/subdir2/test.html	(in=131) (out=107) (deflated 18%)
+0000.067 (0) Output: total bytes=131, compressed=107 -> 18% savings
+0000.071 (0) Output: adding: binziptest/subdir1/subdir2/test2.html	(in=138) (out=113) (deflated 18%)
+0000.071 (0) Output: total bytes=269, compressed=220 -> 18% savings
+0000.076 (0) Working binary zip found: /usr/bin/zip
+0000.077 (0) Zip engine: found/will use a binary zip: /usr/bin/zip
+0000.078 (0) Creation of backups of directories: beginning
+0000.079 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0000.205 (0) Total entities for the zip file: 284 directories, 1751 files (0 skipped as non-modified), 29.4 MB
+0000.208 (0) Zip: backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0000.211 (0) Zip: backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0000.215 (0) Zip: backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0000.221 (0) Zip: backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0000.224 (0) Zip: backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0000.225 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (10.4 MB, 1751 files batched, 501 (501) added so far); re-opening (prior size: 0 KB)
+0000.741 (0) backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-plugins.zip.tmp: size is now: 3.70 MB
+0000.743 (0) Zip: backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-plugins.zip.tmp: 600 files added (on-disk size: 3788.8 KB)
+0000.745 (0) Zip: backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-plugins.zip.tmp: 700 files added (on-disk size: 3788.8 KB)
+0000.747 (0) Zip: backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-plugins.zip.tmp: 800 files added (on-disk size: 3788.8 KB)
+0000.749 (0) Zip: backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-plugins.zip.tmp: 900 files added (on-disk size: 3788.8 KB)
+0000.751 (0) Zip: backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-plugins.zip.tmp: 1000 files added (on-disk size: 3788.8 KB)
+0000.751 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (2.4 MB, 1751 files batched, 501 (1002) added so far); re-opening (prior size: 3788.8 KB)
+0000.930 (0) backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-plugins.zip.tmp: size is now: 4.50 MB
+0000.935 (0) Zip: backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-plugins.zip.tmp: 1100 files added (on-disk size: 4582.5 KB)
+0000.938 (0) Zip: backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-plugins.zip.tmp: 1200 files added (on-disk size: 4582.5 KB)
+0000.941 (0) Zip: backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-plugins.zip.tmp: 1300 files added (on-disk size: 4582.5 KB)
+0000.944 (0) Zip: backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-plugins.zip.tmp: 1400 files added (on-disk size: 4582.5 KB)
+0000.947 (0) Zip: backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-plugins.zip.tmp: 1500 files added (on-disk size: 4582.5 KB)
+0000.947 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (14.2 MB, 1751 files batched, 501 (1503) added so far); re-opening (prior size: 4582.5 KB)
+0001.594 (0) backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-plugins.zip.tmp: size is now: 8.50 MB
+0001.596 (0) Zip: backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-plugins.zip.tmp: 1600 files added (on-disk size: 8655.8 KB)
+0001.598 (0) Zip: backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-plugins.zip.tmp: 1700 files added (on-disk size: 8655.8 KB)
+0001.847 (0) Created plugins zip (0) - 9378.4 KB in 1.7 s (5409.4 KB/s) (sha1: 4cb2a9f20d9a54f8838599822926480af4f9b952, sha256: c9056070da86349c70f8a15852fb2b7b5e30d2aff98620b8f3d919b1517ca5e4)
+0001.849 (0) Beginning creation of dump of themes (split every: 400 MB)
+0001.907 (0) Total entities for the zip file: 28 directories, 151 files (0 skipped as non-modified), 2.9 MB
+0001.910 (0) Zip: backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0001.996 (0) backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-themes.zip.tmp: size is now: 2.20 MB
+0002.017 (0) Created themes zip (0) - 2272.8 KB in 0.1 s (19429.6 KB/s) (sha1: cb355f2c34d2ea585969ef0a30634e0ca5064187, sha256: abde839800fc2d4cae2b01f1408e1d7bdcc8ba7a9a79b90834718a56e4a5a0a6)
+0002.018 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0002.018 (0) Looking for candidates to back up in: /home2/mckenzie/public_html/blog/wp-content/uploads
+0002.019 (0) finding files: 2018: adding to list (1)
+0002.019 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0002.054 (0) Total entities for the zip file: 3 directories, 24 files (0 skipped as non-modified), 1.1 MB
+0002.069 (0) backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-uploads.zip.tmp: size is now: 1.10 MB
+0002.080 (0) Created uploads zip (0) - 1094.4 KB in 0 s (38312.4 KB/s) (sha1: 714d738bdd8d799b6629a1675a4f9caf2403b198, sha256: fab1b53419a2f366f905e22550e883e1aea007561478e59cc125081b20707921)
+0002.082 (0) Beginning backup of other directories found in the content directory (index: 0)
+0002.082 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0002.082 (0) Looking for candidates to back up in: /home2/mckenzie/public_html/blog/wp-content
+0002.083 (0) finding files: plugins: skipping: this is the plugins directory
+0002.083 (0) finding files: upgrade: skipping: excluded by options
+0002.084 (0) finding files: updraft: skipping: this is the updraft directory
+0002.084 (0) finding files: themes: skipping: this is the themes directory
+0002.084 (0) finding files: uploads: skipping: this is the uploads directory
+0002.085 (0) finding files: index.php: adding to list (1)
+0002.085 (0) finding files: db.php: adding to list (2)
+0002.121 (0) Total entities for the zip file: 0 directories, 2 files (0 skipped as non-modified), 0 MB
+0002.125 (0) backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-others.zip.tmp: size is now: 0.00 MB
+0002.130 (0) backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-others.zip.tmp: size is now: 0.00 MB
+0002.133 (0) Created others zip (0) - 1.6 KB in 0 s (127.4 KB/s) (sha1: a631920b6e4ff1a47e4e00f9043b682e8a0c7449, sha256: 9d13798d4b3f0821f836ee3f3a5332839677005d23bfeb3072ed5a307ee838c0)
+0002.135 (0) Saving backup status to database (elements: 8)
+0002.137 (0) Beginning creation of database dump (WordPress DB)
+0002.138 (0) Testing: /usr/bin/mysqldump
+0002.156 (0) Output: /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;\n/*!40103 SET TIME_ZONE='+00:00' */;\n/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;\n/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;\n/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;\n/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;\nDROP TABLE IF EXISTS `blogoptions`;\n/*!40101 SET @saved_cs_client     = @@character_set_client */;\n/*!40101 SET character_set_client = utf8 */;\nCR (truncated - 1202 bytes total)
+0002.158 (0) Working binary mysqldump found: /usr/bin/mysqldump
+0002.161 (0) Table blogoptions: Total expected rows (approximate): 202
+0002.167 (0) Table blogoptions: Total rows added: 198 in 0.01 seconds
+0002.168 (0) Table blogoptions: finishing file (backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-db-table-blogoptions.table.gz - 16.8 KB)
+0002.170 (0) Table blogusers: Total expected rows (approximate): 1
+0002.172 (0) Table blogusers: Total rows added: 1 in 0.00 seconds
+0002.172 (0) Table blogusers: finishing file (backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-db-table-blogusers.table.gz - 0.5 KB)
+0002.174 (0) Table blogusermeta: Total expected rows (approximate): 20
+0002.176 (0) Table blogusermeta: Total rows added: 20 in 0.00 seconds
+0002.177 (0) Table blogusermeta: finishing file (backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-db-table-blogusermeta.table.gz - 1 KB)
+0002.178 (0) Table blogcommentmeta: Total expected rows (approximate): 0
+0002.180 (0) Table blogcommentmeta: Total rows added: 0 in 0.00 seconds
+0002.181 (0) Table blogcommentmeta: finishing file (backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-db-table-blogcommentmeta.table.gz - 0.4 KB)
+0002.184 (0) Table blogcomments: Total expected rows (approximate): 1
+0002.186 (0) Table blogcomments: Total rows added: 1 in 0.00 seconds
+0002.187 (0) Table blogcomments: finishing file (backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-db-table-blogcomments.table.gz - 0.7 KB)
+0002.190 (0) Table bloglinks: Total expected rows (approximate): 0
+0002.192 (0) Table bloglinks: Total rows added: 0 in 0.00 seconds
+0002.192 (0) Table bloglinks: finishing file (backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-db-table-bloglinks.table.gz - 0.4 KB)
+0002.194 (0) Table blogpostmeta: Total expected rows (approximate): 157
+0002.198 (0) Table blogpostmeta: Total rows added: 157 in 0.00 seconds
+0002.198 (0) Table blogpostmeta: finishing file (backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-db-table-blogpostmeta.table.gz - 2.5 KB)
+0002.200 (0) Table blogposts: Total expected rows (approximate): 41
+0002.205 (0) Table blogposts: Total rows added: 41 in 0.00 seconds
+0002.206 (0) Table blogposts: finishing file (backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-db-table-blogposts.table.gz - 5.2 KB)
+0002.208 (0) Table blogterm_relationships: Total expected rows (approximate): 11
+0002.210 (0) Table blogterm_relationships: Total rows added: 11 in 0.00 seconds
+0002.210 (0) Table blogterm_relationships: finishing file (backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-db-table-blogterm_relationships.table.gz - 0.4 KB)
+0002.212 (0) Table blogterm_taxonomy: Total expected rows (approximate): 3
+0002.214 (0) Table blogterm_taxonomy: Total rows added: 3 in 0.00 seconds
+0002.214 (0) Table blogterm_taxonomy: finishing file (backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-db-table-blogterm_taxonomy.table.gz - 0.4 KB)
+0002.218 (0) Table blogtermmeta: Total expected rows (approximate): 0
+0002.219 (0) Table blogtermmeta: Total rows added: 0 in 0.00 seconds
+0002.220 (0) Table blogtermmeta: finishing file (backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-db-table-blogtermmeta.table.gz - 0.4 KB)
+0002.222 (0) Table blogterms: Total expected rows (approximate): 3
+0002.224 (0) Table blogterms: Total rows added: 3 in 0.00 seconds
+0002.224 (0) Table blogterms: finishing file (backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-db-table-blogterms.table.gz - 0.4 KB)
+0002.227 (0) Table blogredirection_404: Total expected rows (approximate): 0
+0002.228 (0) Table blogredirection_404: Total rows added: 0 in 0.00 seconds
+0002.229 (0) Table blogredirection_404: finishing file (backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-db-table-blogredirection_404.table.gz - 0.4 KB)
+0002.230 (0) Table blogredirection_groups: Total expected rows (approximate): 2
+0002.234 (0) Table blogredirection_groups: Total rows added: 2 in 0.00 seconds
+0002.235 (0) Table blogredirection_groups: finishing file (backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-db-table-blogredirection_groups.table.gz - 0.4 KB)
+0002.237 (0) Table blogredirection_items: Total expected rows (approximate): 0
+0002.239 (0) Table blogredirection_items: Total rows added: 0 in 0.00 seconds
+0002.239 (0) Table blogredirection_items: finishing file (backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-db-table-blogredirection_items.table.gz - 0.5 KB)
+0002.242 (0) Table blogredirection_logs: Total expected rows (approximate): 0
+0002.243 (0) Table blogredirection_logs: Total rows added: 0 in 0.00 seconds
+0002.244 (0) Table blogredirection_logs: finishing file (backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-db-table-blogredirection_logs.table.gz - 0.4 KB)
+0002.245 (0) backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-db-table-blogoptions.table.gz (1/16): adding to final database dump
+0002.248 (0) backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-db-table-blogusers.table.gz (2/16): adding to final database dump
+0002.249 (0) backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-db-table-blogusermeta.table.gz (3/16): adding to final database dump
+0002.250 (0) backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-db-table-blogcommentmeta.table.gz (4/16): adding to final database dump
+0002.250 (0) backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-db-table-blogcomments.table.gz (5/16): adding to final database dump
+0002.251 (0) backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-db-table-bloglinks.table.gz (6/16): adding to final database dump
+0002.251 (0) backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-db-table-blogpostmeta.table.gz (7/16): adding to final database dump
+0002.252 (0) backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-db-table-blogposts.table.gz (8/16): adding to final database dump
+0002.254 (0) backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-db-table-blogterm_relationships.table.gz (9/16): adding to final database dump
+0002.255 (0) backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-db-table-blogterm_taxonomy.table.gz (10/16): adding to final database dump
+0002.255 (0) backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-db-table-blogtermmeta.table.gz (11/16): adding to final database dump
+0002.256 (0) backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-db-table-blogterms.table.gz (12/16): adding to final database dump
+0002.256 (0) backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-db-table-blogredirection_404.table.gz (13/16): adding to final database dump
+0002.257 (0) backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-db-table-blogredirection_groups.table.gz (14/16): adding to final database dump
+0002.258 (0) backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-db-table-blogredirection_items.table.gz (15/16): adding to final database dump
+0002.258 (0) backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-db-table-blogredirection_logs.table.gz (16/16): adding to final database dump
+0002.259 (0) backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-db.gz: finished writing out complete database file (24 KB)
+0002.263 (0) Total database tables backed up: 16 (backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-db.gz, size: 27439, sha256)
+0002.267 (0) backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0002.268 (0) backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0002.268 (0) backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0002.269 (0) backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-others.zip: others: This file has not yet been successfully uploaded: will queue
+0002.269 (0) backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-db.gz: db: This file has not yet been successfully uploaded: will queue
+0002.270 (0) Saving backup history. Total backup size: 12.5 MB
+0002.272 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0002.273 (0) Cloud backup selection (1/1): ftp with instance (1/1) (last)
+0002.274 (0) Beginning dispatch of backup to remote (ftp) (instance identifier s-d758885e73cd5f481dba84e396977695)
+0002.310 (0) FTP upload attempt: backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-plugins.zip -> ftp://mckenzie@216.45.48.51/jasonspiller-blog-backup/backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-plugins.zip
+0002.317 (0) Ftp chunked upload: 5.5 % uploaded
+0002.324 (0) Ftp chunked upload: 11 % uploaded
+0002.331 (0) Ftp chunked upload: 16.5 % uploaded
+0002.337 (0) Ftp chunked upload: 22 % uploaded
+0002.348 (0) Ftp chunked upload: 33 % uploaded
+0002.358 (0) Ftp chunked upload: 43.9 % uploaded
+0002.378 (0) Ftp chunked upload: 65.8 % uploaded
+0002.398 (0) Ftp chunked upload: 87.7 % uploaded
+0002.409 (0) FTP upload attempt successful (9378.4KB in 0.1s)
+0002.411 (0) Recording as successfully uploaded: backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-plugins.zip (f9bfc4ab8cf94c6c3bc5fd6630e76d9a)
+0002.414 (0) Deleting local file: backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-plugins.zip: OK
+0002.415 (0) FTP upload attempt: backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-themes.zip -> ftp://mckenzie@216.45.48.51/jasonspiller-blog-backup/backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-themes.zip
+0002.421 (0) Ftp chunked upload: 22.7 % uploaded
+0002.428 (0) Ftp chunked upload: 45.4 % uploaded
+0002.435 (0) Ftp chunked upload: 68.1 % uploaded
+0002.441 (0) Ftp chunked upload: 90.8 % uploaded
+0002.444 (0) FTP upload attempt successful (2272.8KB in 0.03s)
+0002.445 (0) Recording as successfully uploaded: backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-themes.zip (158faabd3a77bcfedcf39383db56316a)
+0002.447 (0) Deleting local file: backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-themes.zip: OK
+0002.448 (0) FTP upload attempt: backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-uploads.zip -> ftp://mckenzie@216.45.48.51/jasonspiller-blog-backup/backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-uploads.zip
+0002.454 (0) Ftp chunked upload: 47.1 % uploaded
+0002.460 (0) Ftp chunked upload: 94.3 % uploaded
+0002.462 (0) FTP upload attempt successful (1094.4KB in 0.01s)
+0002.463 (0) Recording as successfully uploaded: backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-uploads.zip (732860b33c47d4a6c354ee29e6bf7ed0)
+0002.465 (0) Deleting local file: backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-uploads.zip: OK
+0002.466 (0) FTP upload attempt: backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-others.zip -> ftp://mckenzie@216.45.48.51/jasonspiller-blog-backup/backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-others.zip
+0002.466 (0) FTP upload attempt successful (1.6KB in 0s)
+0002.467 (0) Recording as successfully uploaded: backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-others.zip (1687881c49132b0f551bbb36f74b8019)
+0002.469 (0) Deleting local file: backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-others.zip: OK
+0002.470 (0) FTP upload attempt: backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-db.gz -> ftp://mckenzie@216.45.48.51/jasonspiller-blog-backup/backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-db.gz
+0002.470 (0) FTP upload attempt successful (26.8KB in 0s)
+0002.472 (0) Recording as successfully uploaded: backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-db.gz (b79bf155e9e93635e31729dcf9b60cd5)
+0002.473 (0) Deleting local file: backup_2018-06-18-1743_Smiling_Through_Life_bd6a2daebae4-db.gz: OK
+0002.474 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0002.475 (0) Number of backup sets in history: 3; groups (db): 1
+0002.476 (0) Examining (for databases) backup set with group_id=0, nonce=bd6a2daebae4, datestamp=1529343781 (Jun 18 2018 17:43:01)
+0002.476 (0) This backup set is the backup set just made, so will not be deleted.
+0002.476 (0) Examining (for databases) backup set with group_id=0, nonce=ffbe765c8df0, datestamp=1528160959 (Jun 05 2018 01:09:19)
+0002.476 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0002.476 (0) Examining (for databases) backup set with group_id=0, nonce=a5a9263ab50f, datestamp=1526882911 (May 21 2018 06:08:31)
+0002.476 (0) 1526882911: db: this set includes a database (backup_2018-05-21-0608_Smiling_Through_Life_a5a9263ab50f-db.gz); db count is now 2
+0002.476 (0) 1526882911: db: over retain limit (2); will delete this database
+0002.476 (0) Delete file: backup_2018-05-21-0608_Smiling_Through_Life_a5a9263ab50f-db.gz, service=ftp
+0002.477 (0) FTP delete: succeeded (jasonspiller-blog-backup/backup_2018-05-21-0608_Smiling_Through_Life_a5a9263ab50f-db.gz)
+0002.478 (0) This backup set remains non-empty (f=1/d=0); will retain in history
+0002.479 (0) Number of backup sets in history: 3; groups (files): 1
+0002.479 (0) Examining (for files) backup set with nonce=bd6a2daebae4, datestamp=1529343781 (Jun 18 2018 17:43:01)
+0002.479 (0) This backup set is the backup set just made, so will not be deleted.
+0002.480 (0) This backup set is the backup set just made, so will not be deleted.
+0002.480 (0) This backup set is the backup set just made, so will not be deleted.
+0002.480 (0) This backup set is the backup set just made, so will not be deleted.
+0002.480 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0002.480 (0) Examining (for files) backup set with nonce=ffbe765c8df0, datestamp=1528160959 (Jun 05 2018 01:09:19)
+0002.480 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0002.480 (0) Examining (for files) backup set with nonce=a5a9263ab50f, datestamp=1526882911 (May 21 2018 06:08:31)
+0002.480 (0) plugins: over retain limit (2); will delete this file entity
+0002.480 (0) themes: over retain limit (2); will delete this file entity
+0002.480 (0) uploads: over retain limit (2); will delete this file entity
+0002.480 (0) others: over retain limit (2); will delete this file entity
+0002.480 (0) Delete file: backup_2018-05-21-0608_Smiling_Through_Life_a5a9263ab50f-plugins.zip, service=ftp
+0002.481 (0) Delete file: backup_2018-05-21-0608_Smiling_Through_Life_a5a9263ab50f-themes.zip, service=ftp
+0002.481 (0) Delete file: backup_2018-05-21-0608_Smiling_Through_Life_a5a9263ab50f-uploads.zip, service=ftp
+0002.481 (0) Delete file: backup_2018-05-21-0608_Smiling_Through_Life_a5a9263ab50f-others.zip, service=ftp
+0002.482 (0) FTP delete: succeeded (jasonspiller-blog-backup/backup_2018-05-21-0608_Smiling_Through_Life_a5a9263ab50f-plugins.zip)
+0002.483 (0) FTP delete: succeeded (jasonspiller-blog-backup/backup_2018-05-21-0608_Smiling_Through_Life_a5a9263ab50f-themes.zip)
+0002.484 (0) FTP delete: succeeded (jasonspiller-blog-backup/backup_2018-05-21-0608_Smiling_Through_Life_a5a9263ab50f-uploads.zip)
+0002.484 (0) FTP delete: succeeded (jasonspiller-blog-backup/backup_2018-05-21-0608_Smiling_Through_Life_a5a9263ab50f-others.zip)
+0002.486 (0) This backup set is now empty; will remove from history
+0002.486 (0) Deleting log file (log.a5a9263ab50f.txt)
+0002.487 (0) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0002.489 (0) Resume backup (bd6a2daebae4, 0): finish run
+0002.490 (0) Decremented the semaphore (fd) by 1
+0002.490 (0) Semaphore (fd) unlocked
+0002.491 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0002.492 (0) Fetching RSS news feed
+0002.574 (0) Fetched RSS news feed; result is a: SimplePie
+0002.589 (0) Sending email ('Files and database (Full backup)') report (attachments: 0, size: 0 KB) to: jason...
+0002.640 (0) The backup apparently succeeded and is now complete

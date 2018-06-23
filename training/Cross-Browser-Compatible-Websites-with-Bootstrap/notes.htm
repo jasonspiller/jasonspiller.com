@@ -1,0 +1,133 @@
+<!doctype html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Introduction to Bootstrap</title>
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" rel="stylesheet" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+            
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    
+    <style>
+      
+      body {
+        padding: 1em;
+      }
+      
+    </style>
+
+  </head>
+  
+  
+  <body>
+    
+    
+  <h1>Cross-Browser Compatible Websites with Bootstrap</h1>
+    
+  <h2>Lesson 1: Installing Bootstrap</h2>
+    <ul>
+      <li>Use HTML5 doc type</li>
+      <li>Add lang=&quot;en&quot; to HTML tag</li>
+      <li>Add meta tag utf-8</li>
+      <li>Force IE to use edge</li>
+      <li>Set device-wdith and initial scale </li>
+    </ul>
+
+    <h2>Lesson 2: The Responsive Grid</h2>
+    <ul>
+      <li>Do not override style in the Bootstrap file</li>
+      <li>12 columns wide</li>
+      <li>4 breakpoints (&lt;768px, 768-921px, 922px-1199, &gt;1200px)</li>
+      <li>You can nest grids</li>
+      <li>Rows delineate rows :)</li>
+      <li>Cols break at lg, md, sm, and xs</li>
+      <li>You can offset using   </li></ul>
+    <h2>Lesson 3: Working with a Grid</h2>
+    <ul>
+      <li>You can rearrange using push and pull change the order of elements</li>
+    </ul>
+
+    <h2>Lesson 4: Typography</h2>
+    <ul>
+      <li>Bootstrap uses the Normalize.css</li>
+      <li>Helvitica Nueue is the default font</li>
+      <li>You can use class=&quot;h1&quot; to match styles, but keep semmantics</li>
+      <li>class=&quot;lead&quot; differentiates your starting paragraph</li>
+      <li>&lt;s&gt; - striketrough</li>
+      <li>&lt;del&gt; - strikethough for removed text</li>
+      <li>&lt;u&gt; - underline</li>
+      <li>&lt;ins&gt; - underline for inserted text</li>
+      <li>&lt;mark&gt; - highlight text</li>
+      <li>&lt;small&gt; - 85% of the current size</li>
+      <li>&lt;strong&gt; and &lt;em&gt; and similar</li>
+      <li>class=&quot;text-left&quot;, text-justify, etc. align, but do not float like standard alignments</li>
+      <li>class=&quot;text-lowercase&quot;, uppercase, etc. </li>
+      <li>&lt;blockquote&gt;&lt;p&gt; have a cool style. Add &lt;footer&gt; for a cool credit</li>
+      <li>Lists have extra classes. class=&quot;list-unstyled&quot; and list-inline</li>
+      <li>Definition Lists have a horizontal option</li>
+    </ul>
+
+  <h2>Lesson 5: Tables</h2>
+    <ul>
+      <li>class=&quot;table&quot; adds standard formatting</li>
+      <li>table-striped, -hover, -bordered and -condensed add other features</li>
+      <li>most bootstrap elements can have class=&quot;active&quot;, danger, warning, success, info applied to them</li>
+      <li>class=&quot;table-responsive&quot; - causes table to scroll on small devices. Must use FF hack at time of writing in an external CSS</li>
+    </ul>
+
+    <h2>Lesson 6: Forms</h2>
+    <ul>
+      <li>.form-control - adds simple styling</li>
+      <li>for=&quot;<em>id name</em>&quot; will associate label with input</li>
+      <li>you can add .help-block in &lt;p&gt; for help</li>
+      <li>add helpers by adding a wrapping input &lt;div class=&quot;input-group&quot;&gt;</li>
+      <li>inside group add &lt;span class=&quot;input-group-addon&quot;&gt;$&lt;/span&gt; for money</li>
+      <li>also add check boxes, radio button, additional buttons, etc to a group</li>
+      <li>You can make a form inline .form-inline</li>
+      <li>.sr-only for elements that only need to appear for screen reader</li>
+      <li>labels and inputs can appear side-by-side by adding the .form-horizontal to &lt;form&gt; and grouping entries in &lt;div class=&quot;form-group&gt;</li>
+      <li>Then add col classes (i.e. .col-sm-2) to the label and wrapping the input in a div with a complimentary col class</li>
+      <li>Checkboxes have -inline class option</li>
+      <li>Inputs and fieldsets can have disabled to diable them</li>
+      <li>Add .has-succes, .has-error to form-groups</li>
+      <li>You can add -lg to groups and input to make larger</li>
+    </ul>
+    
+    <h2>Lesson 7: Commonly Used Components</h2>
+    <ul>
+      <li>Modals usually go at the bottom of the document</li>
+      <li>Just add .modal to identify a div as modal content</li>
+      <li>You can add a class of .fade for how it animates</li>
+      <li>.modal-dialog wraps .modal-content which wraps .modal-body all in &lt;div&gt;s</li>
+      <li>add data-toggle=&quot;modal&quot; to the button to turn it on and data-target=&quot;#id&quot; to target it</li>
+      <li>You can elements like .modal-header, -footer, etc</li>
+      <li>Add .alert and role=&quot;alert&quot; to a &lt;div&gt; to create an Alert</li>
+      <li>You can also .alert-info, .alert-success</li>
+      <li>To make dismissable add .alert-dismissable and create a button like: &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;alert&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;span class=&quot;sr-only&quot;&gt;Close&lt;/span&gt;&lt;/button&gt; (pay attention to accessibility)</li>
+      <li>Panels can also be a great way to add content as well, especially forms</li>
+      <li>You can .list-group to make interesting lists</li>
+      <li>Add .list-group-item to individual items</li>
+      <li>You can add badges by adding &lt;span class=&quot;badge&gt;value&lt;/span in side &lt;li&gt;</li>
+      <li>You can also use .list-group on &lt;div&gt;s. This can be used for list of links
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrap.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+      </li>
+    </ul>
+  </body>
+
+
+</html>

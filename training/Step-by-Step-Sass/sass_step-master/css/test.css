@@ -1,0 +1,35 @@
+body {
+  font-family: "Trebuchet MS", san-serif; }
+
+button, .cta {
+  background-color: #c2cf52;
+  color: #4e4f48;
+  font: 1.1em "Trebuchet MS", san-serif bold;
+  border-radius: 8px;
+  border: 0;
+  padding: 10px 15px; }
+
+.cta {
+  width: 250px;
+  text-align: center; }
+
+.box1 {
+  width: 50px;
+  height: 200px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #c2cf52; }
+
+.box2 {
+  width: 200px;
+  height: 100px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #c2cf52; }
+
+.box3 {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  padding: 30px;
+  background-color: #c2cf52; }

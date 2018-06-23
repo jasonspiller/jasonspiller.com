@@ -1,0 +1,485 @@
+@import url("//fonts.googleapis.com/css?family=Muli:200,400,400i,700,700i,900");
+/* line 15, style.scss */
+html, body {
+  color: #636466;
+  margin: 0;
+  padding: 0;
+  font-family: Muli, sans-serif;
+  font-size: 100%;
+}
+
+/* line 24, style.scss */
+a {
+  position: relative;
+  color: #6ebe45;
+  text-decoration: none;
+  font-weight: 200;
+}
+/* line 31, style.scss */
+a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -.1em;
+  left: -.1em;
+  background-color: #6ebe45;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+/* line 47, style.scss */
+a:hover {
+  color: #6ebe45;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+}
+/* line 53, style.scss */
+a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* line 62, style.scss */
+h1 {
+  margin: .5em;
+  font-family: Muli, sans-serif;
+  font-size: 3em;
+  font-weight: 200;
+  text-align: center;
+}
+/* line 70, style.scss */
+h1.soon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  margin: 0 auto;
+}
+/* line 80, style.scss */
+h1.home-page {
+  top: 50%;
+  height: 0;
+  padding-top: 17%;
+}
+
+/* line 88, style.scss */
+h2 {
+  margin: .75em 0 .25em;
+  font-family: Muli, sans-serif;
+  color: #c7c8ca;
+}
+
+/* line 95, style.scss */
+h3 {
+  margin: .75em 0 .5em;
+  font-family: Muli, sans-serif;
+  line-height: 1.5;
+}
+
+/* line 102, style.scss */
+p, li {
+  font-size: 1.15em;
+  line-height: 1.5;
+}
+
+/* line 111, style.scss */
+nav ul {
+  -webkit-box-sizing: border;
+  box-sizing: border;
+  min-width: 320px;
+  margin: 0;
+  padding: 0 6%;
+  list-style: none;
+  text-align: center;
+}
+/* line 121, style.scss */
+nav ul li {
+  display: inline;
+  padding: 0 .75em;
+  font-size: 1.5em;
+  letter-spacing: .2em;
+}
+
+.navbar-toggler-icon {
+  color: #6ebe45;
+}
+
+/* line 134, style.scss */
+footer {
+  clear: both;
+  margin: 4em auto 2em;
+  color: #c7c8ca;
+  font-size: .75em;
+  text-align: center;
+}
+/* line 142, style.scss */
+footer .eyes {
+  color: #6ebe45;
+  font-weight: 900;
+}
+/* line 148, style.scss */
+footer .mouth {
+  color: #636466;
+}
+/* line 153, style.scss */
+footer.home-page {
+  bottom: 2em;
+}
+
+/* line 162, style.scss */
+.home-page {
+  position: absolute;
+  margin: 0 auto;
+  left: 50%;
+  width: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+
+/* line 172, style.scss */
+.about, .resume, .portfolio {
+  width: 80%;
+  max-width: 52em;
+  margin: 0 auto 2em;
+  text-align: left;
+}
+
+/* line 195, style.scss */
+.contact-information {
+  margin: .5em 0 0;
+  font-size: 1.15em;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+/* line 203, style.scss */
+.resume p {
+  margin: .25em 0 .75em;
+}
+
+/* line 208, style.scss */
+.skills {
+  -webkit-columns: 3;
+  -moz-columns: 3;
+  columns: 3;
+  list-style-type: none;
+  margin: 0 0 0 2em;
+  padding: 0;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* line 220, style.scss */
+.skills li {
+  margin: 0 0 .35em;
+}
+
+/* line 225, style.scss */
+.experience, .education, .portfolio ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 233, style.scss */
+.experience h3 {
+  margin: .25em 0 .5em;
+}
+
+/* line 238, style.scss */
+.experience ul {
+  list-style-type: none;
+  margin: 0 0 1.5em;
+}
+
+/* line 244, style.scss */
+.experience ul li {
+  margin: .5em 0;
+}
+
+/* line 249, style.scss */
+.experience li li {
+  font-size: 1em;
+}
+
+/* line 254, style.scss */
+.experience ul li::before {
+  content: "\2022";
+  position: relative;
+  top: 0em;
+  float: left;
+  margin: 0 0 0 -1em;
+  padding: 0 0 0 1.125em;
+  width: 1em;
+  font-size: 1em;
+  color: #c7c8ca;
+}
+
+/* line 267, style.scss */
+.dates {
+  color: #c7c8ca;
+  font-weight: normal;
+}
+
+/* line 273, style.scss */
+.company {
+  font-weight: normal;
+}
+
+/* line 278, style.scss */
+.degree, .gpa {
+  font-weight: bold;
+}
+
+/* line 286, style.scss */
+.portfolio {
+  max-width: 80%;
+}
+/* line 291, style.scss */
+.portfolio p {
+  width: 60%;
+  max-width: 52em;
+}
+
+/* line 298, style.scss */
+.piece img {
+  width: 30%;
+  max-width: 320px;
+  display: block;
+  float: right;
+  margin: 0 0 1em 2em;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+/* line 9, _gallery.scss */
+#spinner {
+  height: 5em;
+  width: 5em;
+  margin: 10em auto;
+  position: relative;
+  animation: rotation .5s infinite linear;
+  border-left: 0.1em solid rgba(110, 190, 69, 0.15);
+  border-right: 0.1em solid rgba(110, 190, 69, 0.15);
+  border-bottom: 0.1em solid rgba(110, 190, 69, 0.15);
+  border-top: 0.1em solid rgba(110, 190, 69, 0.8);
+  border-radius: 100%;
+}
+
+/* line 23, _gallery.scss */
+#gallery {
+  column-count: 5;
+  column-gap: 0;
+  opacity: 0;
+}
+
+/* line 30, _gallery.scss */
+#gallery .gallery-img {
+  width: 100%;
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* line 38, _gallery.scss */
+#gallery .gallery-img img {
+  width: 100%;
+  display: block;
+}
+
+/* line 44, _gallery.scss */
+#gallery .gallery-img figcaption {
+  background: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 52, _gallery.scss */
+#gallery .gallery-img.left figcaption {
+  top: 0;
+  left: -100%;
+}
+
+/* line 58, _gallery.scss */
+#gallery .gallery-img.right figcaption {
+  top: 0;
+  right: -100%;
+}
+
+/* line 64, _gallery.scss */
+#gallery .gallery-img.top figcaption {
+  top: -100%;
+}
+
+/* line 69, _gallery.scss */
+#gallery .gallery-img.bottom figcaption {
+  bottom: -100%;
+}
+
+/* line 74, _gallery.scss */
+#gallery .gallery-img.animated figcaption {
+  transition: .5s ease-out;
+}
+
+/* line 79, _gallery.scss */
+#gallery .gallery-img.left.animated figcaption {
+  left: 0;
+}
+
+/* line 84, _gallery.scss */
+#gallery .gallery-img.right.animated figcaption {
+  right: 0;
+}
+
+/* line 89, _gallery.scss */
+#gallery .gallery-img.top.animated figcaption {
+  top: 0;
+}
+
+/* line 94, _gallery.scss */
+#gallery .gallery-img.bottom.animated figcaption {
+  bottom: 0;
+}
+
+/* line 99, _gallery.scss */
+#gallery .gallery-img figcaption .description {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 106, _gallery.scss */
+#gallery .gallery-img figcaption .description h1 {
+  box-sizing: border;
+  position: absolute;
+  top: 1em;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+/* line 119, _gallery.scss */
+#gallery .gallery-img figcaption .description p {
+  position: absolute;
+  bottom: 1.5em;
+  width: 100%;
+  color: #fff;
+  font-weight: 900;
+  text-align: center;
+}
+
+@media (min-width: 1140px) and (max-width: 1440px) {
+  /* line 130, _gallery.scss */
+  #gallery {
+    column-count: 4;
+  }
+}
+@media (min-width: 768px) and (max-width: 1140px) {
+  /* line 136, _gallery.scss */
+  #gallery {
+    column-count: 3;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  /* line 142, _gallery.scss */
+  #gallery {
+    column-count: 2;
+  }
+}
+@media (max-width: 480px) {
+  /* line 149, _gallery.scss */
+  #gallery {
+    column-count: 1;
+  }
+}
+
+/* about headshot */
+.headshot {
+  display: block;
+  height: 300px;
+  margin: 50px auto 0;
+  border-radius: 200px;
+}
+
+/* line 313, style.scss */
+#logo, #logomark {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 320, style.scss */
+.gray {
+  fill: #636466;
+}
+
+/* line 325, style.scss */
+.light-gray {
+  fill: #c7c8ca;
+}
+
+/* line 330, style.scss */
+.green {
+  fill: #6ebe45;
+}
+
+/* line 335, style.scss */
+.logomark-container {
+  display: block;
+  z-index: 9999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6%;
+  max-width: 4em;
+}
+
+a.logomark-container:before {
+  height: 0 !important;
+}
+
+/* line 345, style.scss */
+.logo-resume {
+  position: relative;
+  width: 80%;
+  max-width: 10em;
+  height: 2.5em;
+  margin: 1em auto 0;
+  text-align: center;
+}
+
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+  .about, .resume, .portfolio {
+    text-align: justify;
+  }
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
+
+
+/*# sourceMappingURL=style.css.map */

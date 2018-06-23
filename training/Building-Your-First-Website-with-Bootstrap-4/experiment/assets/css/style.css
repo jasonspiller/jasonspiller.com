@@ -1,0 +1,169 @@
+/* style.css */
+
+
+body {
+  font-family: 'Muli', sans-serif;
+}
+
+.no-padding {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.no-margin {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.navbar-brand {
+  font-weight: 900;
+  letter-spacing: 1em;
+}
+
+.navbar-brand svg {
+  margin-right: 1em;
+}
+
+nav .nav-item, nav .dropdown-item {
+  text-align: center;
+}
+
+.jumbotron {
+  background: rgba(0,0,0,.5);
+  color: #fff;
+  text-align: center;
+}
+
+.jumbotron .display-4 {
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .5em;
+}
+
+.jumbotron .lead {
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: .5em;
+}
+
+.carousel, .tricks {
+  margin-bottom: 2rem;
+}
+
+.carousel-control-bg {
+  padding: 10px 6px 5px 10px;
+  background: rgba(0,0,0,0.75);
+
+}
+
+.carousel-caption {
+  background: rgba(0,0,0,0.75);
+}
+
+.our-story.bg-inverse {
+  margin-bottom: 2rem;
+  padding: 2rem;
+  color: #fff;
+}
+
+@media(max-width:576px){
+  .img-fluid.kfs {
+    max-width: 50%;
+  }
+  
+  #btnCoolStuff, #btnKickflip, #btn360Flip, #btnBSCrooks {
+    width: 90%;
+  }
+
+}
+
+.btn   {
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.btn-primary  {
+  background: #D94518;
+  color: #fff;
+  font-weight: 700;
+  transform: scale(1);
+  transition: scale() 2s ease; 
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active  {
+  background: #D94518;
+  transform: scale(1.025) perspective(1px);
+  border: none;
+  box-shadow: none;
+}
+
+.btn-secondary {
+  opacity: .5;
+}
+
+button.close:hover, button.close:focus, button.close:active, button.close.active {
+  color: #D94518; 
+}
+
+#btnCoolStuff, #btnKickflip, #btn360Flip, #btnBSCrooks {
+  margin: 1.5rem 0;
+  width: 75%;
+}
+
+button.close {
+  color: #fff;
+  text-shadow: none;
+  opacity: 1;
+}
+
+footer {
+  padding: 2rem;
+}
+
+footer .socials {
+  margin: auto;
+}
+
+footer .socials svg {
+  color: #fff;
+  margin-left: 2rem;
+}
+
+.modal-content {
+  border-radius: 0;
+}
+
+.modal-title {
+  font-weight: 900;
+}
+
+.modal-header, .modal-footer {
+  color: #fff;
+  border: 0;
+}
+
+.modal-body {
+  background: #fff;
+}
+
+.modal-body img {
+  margin-bottom: 2rem;
+}
+
+.form-control {
+  border-radius: 0;
+}
+
+.form-control:focus {
+  border-color: #D94518;
+  box-shadow: none;
+}
+
+.modal p.bg-inverse {
+  margin: 0;
+  padding: 1rem;
+  color: #fff;
+  font-weight: 700;
+}
+
