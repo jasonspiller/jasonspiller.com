@@ -28,7 +28,7 @@ gulp.task('images', function() {
 // copy task to copy any other files
 gulp.task('copy', function() {
   return gulp.src('src/**/*.+(html|htm|js)')
-    .pipe(gulp.dest(''))
+    .pipe(gulp.dest('./'))
     .pipe(browserSync.stream())
 });
 
@@ -36,14 +36,14 @@ gulp.task('copy', function() {
 gulp.task('browserSync', function() {
   browserSync.init({
     server: {
-      baseDir: '',
-      index: 'index.htm'
+      baseDir: './',
+      index: 'index.html'
     }
   })
 });
 
 // watch task to monitor files
 gulp.task('watch', ['browserSync', 'css'], function() {
-  gulp.watch('src/sass/**/*.scss', ['css'])
+  gulp.watch('src/scss/**/*.scss', ['css'])
   gulp.watch('src/**/*.+(html|htm|js)', ['copy'])
 });

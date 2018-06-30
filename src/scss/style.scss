@@ -48,6 +48,7 @@ a
   {
     color: $action;
     -webkit-transition: all 0.5s ease-in-out 0s;
+    text-decoration: none;
   }
 
   &:hover:before
@@ -110,13 +111,15 @@ p, li
 
 nav ul
 {
+  position: relative;
+  z-index: 1;
   -webkit-box-sizing: border;
   box-sizing: border;
-  min-width: 320px;
   margin: 0;
   padding: 0 6%;
   list-style: none;
   text-align: center;
+  background: #fff;
 
   li
   {
