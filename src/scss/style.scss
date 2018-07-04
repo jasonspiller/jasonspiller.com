@@ -157,7 +157,7 @@ footer {
 
 %page {
 	width: 80%;
-	max-width: 52em;
+	max-width: 56em;
 	margin: 0 auto 2em;
 	text-align: left;
 }
@@ -299,6 +299,8 @@ footer {
 
 .experience h3 {
   margin: .25em 0 .5em;
+  color: $action;
+  font-size: 1.4rem;
 }
 
 .experience ul {
@@ -325,12 +327,17 @@ footer {
   color: $light;
 }
 
-.dates {
-  color: $light;
-  font-weight: normal;
+.company {
+  color: $dark;
+  font-weight: bold;
 }
 
-.company {
+.location {
+  color: $dark;
+}
+
+.dates {
+  color: $light;
   font-weight: normal;
 }
 

@@ -133,7 +133,7 @@ footer.home-page {
 
 .resume, .about {
   width: 80%;
-  max-width: 52em;
+  max-width: 56em;
   margin: 0 auto 2em;
   text-align: left;
 }
@@ -259,6 +259,8 @@ footer.home-page {
 
 .experience h3 {
   margin: .25em 0 .5em;
+  color: #6ebe45;
+  font-size: 1.4rem;
 }
 
 .experience ul {
@@ -285,12 +287,17 @@ footer.home-page {
   color: #c7c8ca;
 }
 
-.dates {
-  color: #c7c8ca;
-  font-weight: normal;
+.company {
+  color: #636466;
+  font-weight: bold;
 }
 
-.company {
+.location {
+  color: #636466;
+}
+
+.dates {
+  color: #c7c8ca;
   font-weight: normal;
 }
 
