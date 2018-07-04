@@ -41,6 +41,12 @@ a:hover:before {
   transform: scaleX(1);
 }
 
+a.portfolio-item {
+  display: block;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+}
+
 h1 {
   margin: .5em;
   font-family: Muli, sans-serif;
@@ -125,6 +131,13 @@ footer.home-page {
   bottom: 2em;
 }
 
+.resume, .about {
+  width: 80%;
+  max-width: 52em;
+  margin: 0 auto 2em;
+  text-align: left;
+}
+
 .home-page {
   position: absolute;
   margin: 0 auto;
@@ -134,11 +147,83 @@ footer.home-page {
   transform: translate3d(-50%, -50%, 0);
 }
 
-.about, .resume, .portfolio {
-  width: 80%;
-  max-width: 52em;
-  margin: 0 auto 2em;
-  text-align: left;
+.page-nav {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.page-nav li {
+  display: inline;
+  list-style: none;
+  margin: .225rem;
+}
+
+.page-nav a:before {
+  left: 0;
+}
+
+.scroll-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  opacity: 0;
+  cursor: pointer;
+  padding: .5rem 1rem 1rem;
+  background: #6ebe45;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1;
+  text-align: center;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.scroll-top i {
+  display: inline;
+  font-size: 2rem;
+}
+
+#fullStack, #webDesign, #graphicDesign {
+  margin-top: 5rem;
+}
+
+.portfolio-item h3 {
+  margin: 0;
+}
+
+.portfolio-item .subhead {
+  color: #c7c8ca;
+  font-weight: bold;
+}
+
+.portfolio-item p {
+  color: #636466;
+}
+
+.portfolio-item ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.portfolio-item li {
+  list-style: none;
+  display: inline-block;
+  margin: .5rem;
+  color: #636466;
+  font-size: .8rem;
+}
+
+.portfolio-item li i, .portfolio-item li svg {
+  margin: 0 auto;
+  color: #6ebe45;
+  font-size: 1.5rem;
+}
+
+.portfolio-item img {
+  display: block;
+  margin: 1rem auto 0;
 }
 
 .contact-information {
@@ -195,7 +280,6 @@ footer.home-page {
   top: 0em;
   float: left;
   margin: 0 0 0 -1em;
-  padding: 0 0 0 1.125em;
   width: 1em;
   font-size: 1em;
   color: #c7c8ca;
@@ -214,179 +298,11 @@ footer.home-page {
   font-weight: bold;
 }
 
-.portfolio {
-  max-width: 80%;
-}
-
-.portfolio p {
-  width: 60%;
-  max-width: 52em;
-}
-
-.piece img {
-  width: 30%;
-  max-width: 320px;
+.headshot {
   display: block;
-  float: right;
-  margin: 0 0 1em 2em;
-}
-
-@-webkit-keyframes rotation {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(359deg);
-            transform: rotate(359deg);
-  }
-}
-
-@keyframes rotation {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(359deg);
-            transform: rotate(359deg);
-  }
-}
-
-#spinner {
-  height: 5em;
-  width: 5em;
-  margin: 10em auto;
-  position: relative;
-  -webkit-animation: rotation .5s infinite linear;
-          animation: rotation .5s infinite linear;
-  border-left: 0.1em solid rgba(110, 190, 69, 0.15);
-  border-right: 0.1em solid rgba(110, 190, 69, 0.15);
-  border-bottom: 0.1em solid rgba(110, 190, 69, 0.15);
-  border-top: 0.1em solid rgba(110, 190, 69, 0.8);
-  border-radius: 100%;
-}
-
-#gallery {
-  -webkit-column-count: 5;
-          column-count: 5;
-  -webkit-column-gap: 0;
-          column-gap: 0;
-  opacity: 0;
-}
-
-#gallery .gallery-img {
-  width: 100%;
-  position: relative;
-  margin: 0;
-  overflow: hidden;
-}
-
-#gallery .gallery-img img {
-  width: 100%;
-  display: block;
-}
-
-#gallery .gallery-img figcaption {
-  background: rgba(0, 0, 0, 0.75);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-#gallery .gallery-img.left figcaption {
-  top: 0;
-  left: -100%;
-}
-
-#gallery .gallery-img.right figcaption {
-  top: 0;
-  right: -100%;
-}
-
-#gallery .gallery-img.top figcaption {
-  top: -100%;
-}
-
-#gallery .gallery-img.bottom figcaption {
-  bottom: -100%;
-}
-
-#gallery .gallery-img.animated figcaption {
-  -webkit-transition: .5s ease-out;
-  transition: .5s ease-out;
-}
-
-#gallery .gallery-img.left.animated figcaption {
-  left: 0;
-}
-
-#gallery .gallery-img.right.animated figcaption {
-  right: 0;
-}
-
-#gallery .gallery-img.top.animated figcaption {
-  top: 0;
-}
-
-#gallery .gallery-img.bottom.animated figcaption {
-  bottom: 0;
-}
-
-#gallery .gallery-img figcaption .description {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-#gallery .gallery-img figcaption .description h1 {
-  -webkit-box-sizing: border;
-          box-sizing: border;
-  position: absolute;
-  top: 1em;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  color: #fff;
-  font-size: 2.5em;
-  text-align: center;
-}
-
-#gallery .gallery-img figcaption .description p {
-  position: absolute;
-  bottom: 1.5em;
-  width: 100%;
-  color: #fff;
-  font-weight: 900;
-  text-align: center;
-}
-
-@media (min-width: 1140px) and (max-width: 1440px) {
-  #gallery {
-    -webkit-column-count: 4;
-            column-count: 4;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1140px) {
-  #gallery {
-    -webkit-column-count: 3;
-            column-count: 3;
-  }
-}
-
-@media (min-width: 480px) and (max-width: 768px) {
-  #gallery {
-    -webkit-column-count: 2;
-            column-count: 2;
-  }
-}
-
-@media (max-width: 480px) {
-  #gallery {
-    -webkit-column-count: 1;
-            column-count: 1;
-  }
+  height: 300px;
+  margin: 50px auto 0;
+  border-radius: 200px;
 }
 
 #logo, #logomark {

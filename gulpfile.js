@@ -20,9 +20,9 @@ gulp.task('css', function() {
 
 // processes images
 gulp.task('images', function() {
-  return gulp.src('src/images/*')
+  return gulp.src('src/img/*')
     .pipe(imagemin())
-    .pipe(gulp.dest('images'))
+    .pipe(gulp.dest('img'))
 });
 
 // copy task to copy any other files
@@ -43,7 +43,8 @@ gulp.task('browserSync', function() {
 });
 
 // watch task to monitor files
-gulp.task('watch', ['browserSync', 'css'], function() {
+gulp.task('watch', ['browserSync', 'css', 'images'], function() {
   gulp.watch('src/scss/**/*.scss', ['css'])
+  gulp.watch('src/**/*.+(jpg|png|gif|svg)', ['images'])
   gulp.watch('src/**/*.+(html|htm|js)', ['copy'])
 });

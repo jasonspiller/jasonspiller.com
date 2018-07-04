@@ -12,8 +12,7 @@ $action:  #6ebe45;
 $font:    Muli, sans-serif;
 
 
-html, body
-{
+html, body {
   color: $dark;
   margin: 0;
   padding: 0;
@@ -21,15 +20,13 @@ html, body
   font-size: 100%;
 }
 
-a
-{
+a {
   position: relative;
   color: $action;
   text-decoration: none;
   font-weight: 200;
 
-  &:before
-  {
+  &:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -44,32 +41,34 @@ a
     transition: all 0.5s ease-in-out 0s;
   }
 
-  &:hover
-  {
+  &:hover {
     color: $action;
     -webkit-transition: all 0.5s ease-in-out 0s;
     text-decoration: none;
   }
 
-  &:hover:before
-  {
+  &:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1)
   }
 
+  &.portfolio-item {
+    display: block;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+  }
+
 }
 
-h1
-{
+h1 {
   margin: .5em;
   font-family: $font;
   font-size: 3em;
   font-weight: 200;
   text-align: center;
 
-  &.soon
-  {
+  &.soon {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -78,30 +77,26 @@ h1
     margin: 0 auto;
   }
 
-  &.home-page
-  {
+  &.home-page {
     top: 50%;
     height: 0;
     padding-top: 17%;
   }
 }
 
-h2
-{
+h2 {
   margin: .75em 0 .25em;
   font-family: $font;
   color: $light;
 }
 
-h3
-{
+h3 {
   margin: .75em 0 .5em;
   font-family: $font;
   line-height: 1.5
 }
 
-p, li
-{
+p, li {
   font-size: 1.15em;
   line-height: 1.5;
 }
@@ -109,8 +104,7 @@ p, li
 
 // nav
 
-nav ul
-{
+nav ul {
   position: relative;
   z-index: 1;
   -webkit-box-sizing: border;
@@ -121,8 +115,7 @@ nav ul
   text-align: center;
   background: #fff;
 
-  li
-  {
+  li {
     display: inline;
     padding: 0 .75em;
     font-size: 1.5em;
@@ -138,36 +131,39 @@ nav ul
 
 // footer
 
-footer
-{
+footer {
   clear: both;
   margin: 4em auto 2em;
   color: $light;
   font-size: .75em;
   text-align: center;
 
-  .eyes
-  {
+  .eyes {
     color: $action;
     font-weight: 900;
   }
 
-  .mouth
-  {
+  .mouth {
     color: $dark;
   }
 
-  &.home-page
-  {
+  &.home-page {
     bottom: 2em;
   }
 }
 
 
-// pages
+// PAGE SPECIFIC STYLES
 
-.home-page
-{
+%page {
+	width: 80%;
+	max-width: 52em;
+	margin: 0 auto 2em;
+	text-align: left;
+}
+
+
+.home-page {
   position: absolute;
   margin: 0 auto;
   left: 50%;
@@ -176,43 +172,110 @@ footer
   transform: translate3d(-50%,-50%,0);
 }
 
-%page
-{
-	width: 80%;
-	max-width: 52em;
-	margin: 0 auto 2em;
-	text-align: left;
+
+// portfolio
+
+.page-nav {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  li {
+    display: inline;
+    list-style: none;
+    margin: .225rem;
+  }
+
+  a:before {
+    left: 0;
+  }
 }
 
+.scroll-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  opacity: 0;
+  cursor: pointer;
+  padding: .5rem 1rem 1rem;
+  background: $action;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1;
+  text-align: center;
+  transition: all 0.5s ease-in-out 0s;
 
-// about
-.about
-{
-  @extend %page;
+  i {
+    display: inline;
+    font-size: 2rem;
+  }
+
+}
+
+#fullStack, #webDesign, #graphicDesign {
+  margin-top: 5rem;
+}
+
+.portfolio-item {
+
+  h3 {
+    margin: 0;
+  }
+
+  .subhead {
+    color: $light;
+    font-weight: bold;
+  }
+
+  p {
+    color: $dark;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  li {
+    list-style: none;
+    display: inline-block;
+    margin: .5rem;
+    color: $dark;
+    font-size: .8rem;
+
+    i, svg {
+      margin: 0 auto;
+      color: $action;
+      font-size: 1.5rem;
+    }
+  }
+
+  img {
+    display: block;
+    margin: 1rem auto 0;
+  }
+
 }
 
 
 // resume
-.resume
-{
+.resume {
   @extend %page;
 }
 
-.contact-information
-{
+.contact-information {
   margin: .5em 0 0;
 	font-size: 1.15em;
   line-height: 1.5em;
 	text-align: center;
 }
 
-.resume p
-{
+.resume p {
   margin: .25em 0 .75em;
 }
 
-.skills
-{
+.skills {
 	-webkit-columns: 3;
   -moz-columns: 3;
   columns: 3;
@@ -223,123 +286,92 @@ footer
   text-align: left;
 }
 
-.skills li
-{
+.skills li {
   margin: 0 0 .35em;
 }
 
-.experience, .education, .portfolio ul
-{
+.experience, .education, .portfolio ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 
 }
 
-.experience h3
-{
+.experience h3 {
   margin: .25em 0 .5em;
 }
 
-.experience ul
-{
+.experience ul {
   list-style-type: none;
   margin: 0 0 1.5em;
 }
 
-.experience ul li
-{
+.experience ul li {
   margin: .5em 0;
 }
 
-.experience li li
-{
+.experience li li {
   font-size: 1em;
 }
 
-.experience ul li::before
-{
+.experience ul li::before {
   content: "\2022";
   position: relative;
   top: 0em;
   float: left;
   margin: 0 0 0 -1em;
-  padding: 0 0 0 1.125em;
   width: 1em;
   font-size: 1em;
   color: $light;
 }
 
-.dates
-{
+.dates {
   color: $light;
   font-weight: normal;
 }
 
-.company
-{
+.company {
   font-weight: normal;
 }
 
-.degree, .gpa
-{
+.degree, .gpa {
   font-weight: bold;
 }
 
 
-// portfolio
-
-.portfolio
-{
+// about
+.about {
   @extend %page;
-  max-width: 80%;
-
-  p
-  {
-    width: 60%;
-    max-width: 52em;
-  }
 }
 
-.piece img
-{
-  width: 30%;
-  max-width: 320px;
+.headshot {
   display: block;
-  float: right;
-  margin: 0 0 1em 2em;
+  height: 300px;
+  margin: 50px auto 0;
+  border-radius: 200px;
 }
-
-// import gallery css
-@import "gallery";
 
 
 // svg logo
-
-#logo, #logomark
-{
+#logo, #logomark {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.gray
-{
+.gray {
   fill: $dark;
 }
 
-.light-gray
-{
+.light-gray {
   fill: $light;
 }
 
-.green
-{
+.green {
   fill: $action;
 }
 
-.logomark-container
-{
+.logomark-container {
   display: block;
   z-index: 9999;
   position: absolute;
@@ -353,8 +385,7 @@ a.logomark-container:before {
   height: 0 !important;
 }
 
-.logo-resume
-{
+.logo-resume {
 	position: relative;
   width: 80%;
   max-width: 10em;
@@ -363,9 +394,6 @@ a.logomark-container:before {
   text-align: center;
 }
 
-
-// Extra small devices (portrait phones, less than 576px)
-// No media query for `xs` since this is the default in Bootstrap
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
