@@ -19,6 +19,6 @@
   "dependencies": {
     "browser-sync": "^2.23.6",
     "hoek": "^5.0.3",
-    "npm": "^6.1.0"
+    "npm": "^6.2.0"
   }
 }
