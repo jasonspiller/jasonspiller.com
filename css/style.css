@@ -280,7 +280,7 @@ footer.home-page {
   margin: 0 0 .35em;
 }
 
-.experience, .education, .portfolio ul {
+.experience, .education, .extras, .portfolio ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -410,6 +410,16 @@ a.logomark-container:before {
 @media (min-width: 768px) {
   .about, .resume, .portfolio {
     text-align: justify;
+  }
+}
+
+@media print {
+  .resume {
+    width: 100%;
+    max-width: 62em;
+  }
+  .scroll-top {
+    display: none;
   }
 }
 
